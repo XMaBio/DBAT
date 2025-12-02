@@ -45,8 +45,8 @@ DBAT has been tested on a Linux system
 
 The test/ directory contains:  
 
-  `ath.fa`: Arabidopsis thaliana Chr2, Chr3, Chr4 sequences  
-  `osa.fa`: Rice (Oryza sativa) Chr10 sequence  
+  `ath.fa`: *Arabidopsis thaliana* Chr2, Chr3, Chr4 sequences  
+  `osa.fa`: Rice (*Oryza sativa*) Chr10 sequence  
 
   `ath_h3k4.bw`: Arabidopsis H3K4me3 ChIP-seq (SRR3709930)  
   `ath_h3k9.bw`: Arabidopsis H3K9me2 ChIP-seq (GSM5574912)  
