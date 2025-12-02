@@ -20,21 +20,21 @@ DBAT has been tested on a Linux system
 (Ubuntu 24.04.3, GCC 13.3.0, CUDA 12.9, Python 3.12.12)
 
 
-**Authors**: Xuan Ma, Bochao Liu  
+**Authors:** Xuan Ma, Bochao Liu  
 
-**Contact**: skyxma@tjnu.edu.cn  
+**Contact:** skyxma@tjnu.edu.cn  
 
 
 
 ## INSTALLATION
 
-Step 1: Set up a Conda environment (recommended)  
+**Step 1:** Set up a Conda environment (recommended)  
 ```bash
   conda create -n dbat python=3.9  
   conda activate dbat
 ```
 
-Step 2: Install DBAT  
+**Step 2:** Install DBAT  
 ```bash
   pip install -e .  
 ```
@@ -68,7 +68,7 @@ Navigate to the test directory:
 
 ### 1. deepPeak prediction of sequencing peaks (normal mode)  
 
-Step 1: Train on Arabidopsis H3K4me3  
+**Step 1:** Train on Arabidopsis H3K4me3  
 ```bash
   dbat deepPeak --mode norm \
                 --action train \
@@ -77,7 +77,7 @@ Step 1: Train on Arabidopsis H3K4me3
                 --output out1
 ```
 
-Step 2: Predict rice H3K4me3 track
+**Step 2:** Predict rice H3K4me3 track
 ```bash
   dbat deepPeak --mode norm \
                 --action prediction \
@@ -90,7 +90,7 @@ Step 2: Predict rice H3K4me3 track
 
 ### 2. cross-species prediction of mutant profiles (cross species mode)
 
-Step 1: Train on Arabidopsis WT and mutant
+**Step 1:** Train on Arabidopsis WT and mutant
 ```bash
   dbat deepPeak --mode cross_spe \
                 --action train \
@@ -100,7 +100,7 @@ Step 1: Train on Arabidopsis WT and mutant
                 --output out2
 ```
 
-Step 2: Predict rice mutant profile
+**Step 2:** Predict rice mutant profile
 ```bash
   dbat deepPeak --mode cross_spe \
                 --action prediction \
@@ -121,7 +121,7 @@ Step 2: Predict rice mutant profile
 
 ## ADDITIONAL NOTES
 
-1. deepPeak allows to input suppressive data:
+**1.** deepPeak allows to input suppressive data:
 ```bash
   dbat deepPeak --mode norm \
                 --action train \
@@ -131,10 +131,10 @@ Step 2: Predict rice mutant profile
                 --output out2
 ```
 
-3. Training parameters are adjustable:  
+**3.** Training parameters are adjustable:  
   Modify settings (e.g. batch size) in config/cfg.yml as needed.  
 
-4. deepLoci input format:  
+**4.** deepLoci input format:  
   The input CSV must include a header with columns as:  
   ID,feature,data,sample,pos1,pos2,...  
 
