@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dbat"
+version = "0.1.0"
+description = "Deep learning-based Bio-sequencing analysis toolkit"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Xuan Ma", email = "skyxma@tjnu.edu.cn" }
+]
+
+dependencies = [
+    "joblib",
+    "numpy",
+    "pandas",
+    "pyBigWig",
+    "PyYAML",
+    "scikit-learn",
+    "scipy",
+    "torch",
+    "tqdm",
+    "einops",
+]
+
+[project.scripts]
+dbat = "dbat:main"

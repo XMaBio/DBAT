@@ -1,0 +1,17 @@
+# Genome data parameters 
+data_params:
+  seq_length: 196608  # Window length
+  bin_size: 128       # Bin size
+
+# Training parameters
+train_params:
+  test_prop: 0.1      # Proportion of test set
+  val_prop: 0.1       # Proportion of validation set
+  batch_size: 3       # Batch size
+  epochs: 10          # Number of training epochs
+  use_amp: False      # Automatic Mixed Precision (AMP) for faster training
+
+#Input Output parameters
+input_params:
+  output_dir: "results" # Default output directory
+  suppressive_path: []  # Suppressive dataset paths

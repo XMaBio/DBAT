@@ -1,0 +1,6 @@
+#Input Output parameters
+input_params:
+  patience: 7  # early stop patience
+  inilr: 5e-5  # initial learning rate
+  minlr: 5e-7  # minimum learning rate
+  workers: 4   # number of workers
