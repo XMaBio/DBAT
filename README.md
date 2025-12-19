@@ -58,7 +58,7 @@ cd test/
 
 ### 1. deepPeak predicts sequencing peaks (normal mode)
 
-Train on Arabidopsis H3K4me3:
+#### Train on Arabidopsis H3K4me3:
 ```bash
 dbat deepPeak --mode norm \
               --action train \
@@ -67,7 +67,7 @@ dbat deepPeak --mode norm \
               --output out1
 ```
 
-Predict rice H3K4me3 track:
+#### Predict rice H3K4me3 track:
 ```bash
 dbat deepPeak --mode norm \
               --action prediction \
@@ -79,7 +79,7 @@ dbat deepPeak --mode norm \
 
 ### 2. deepPeak conducts cross-species prediction of mutant profiles
 
-Train on Arabidopsis WT and mutant:
+#### Train on Arabidopsis WT and mutant:
 ```bash
 dbat deepPeak --mode cross_spe \
               --action train \
@@ -89,7 +89,7 @@ dbat deepPeak --mode cross_spe \
               --output out2
 ```
 
-Predict rice mutant profile:
+#### Predict rice mutant profile:
 ```bash
 dbat deepPeak --mode cross_spe \
               --action prediction \
