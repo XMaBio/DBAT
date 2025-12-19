@@ -1,30 +1,34 @@
 # DBAT: Deep learning-based Bio-sequencing Analysis Toolkit
-Version 0.2.0
+**Version 0.2.0**
+
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Linux-lightgrey)]()
 
 ## Description
 
 DBAT (Deep learning-based Bio-sequencing Analysis Toolkit) is a versatile toolkit for biological sequencing data analysis, consisting of two deep learning modules:
 
-- deepPeak: A deep learning framework using TransUNet to predict sequencing tracks and enable cross-species prediction of mutant profiles.
+- **deepPeak**: A deep learning framework to predict sequencing tracks and enable cross-species prediction of mutant profiles.
 
-- deepLoci: A CNN model to predict featured genomic loci based on omics data.
+- **deepLoci**: A CNN model to predict featured genomic loci based on omics data.
 
 DBAT has been tested on a Linux system (Ubuntu 24.04.3, GCC 13.3.0, CUDA 12.9, Python 3.12.12)
 
 ## Authors and Contact
 
-Authors: Xuan Ma, Bochao Liu  
-Contact: skyxma@tjnu.edu.cn
+- **Authors**: Xuan Ma, Bochao Liu  
+- **Email**: [skyxma@tjnu.edu.cn](mailto:skyxma@tjnu.edu.cn)
 
 ## Installation
 
-Step 1: Set up a Conda environment (recommended)
+### Step 1: Set up a Conda environment (recommended)
 ```bash
 conda create -n dbat python=3.9
 conda activate dbat
 ```
 
-Step 2: Install DBAT
+### Step 2: Install DBAT
 ```bash
 cd dbat
 pip install -e .
@@ -34,14 +38,16 @@ pip install -e .
 
 The test/ directory contains:
 
-- ath.fa: Arabidopsis thaliana Chr2, Chr3, Chr4 sequences
-- osa.fa: Rice (Oryza sativa) Chr10 sequence
-- ath_h3k4.bw: Arabidopsis H3K4me3 ChIP-seq (SRR3709930)
-- ath_h3k9.bw: Arabidopsis H3K9me2 ChIP-seq (GSM5574912)
-- ath_wt.bw: Arabidopsis WT sRNA-seq (GSE179796)
-- ath_ddm.bw: Arabidopsis ddm1 mutant sRNA-seq (GSE179796)
-- osa_wt.bw: Rice WT sRNA-seq
-- ath_omics.csv: Integrated Arabidopsis omics data
+| File             | Description |
+|------------------|-------------|
+| ath.fa           | *Arabidopsis thaliana* Chr2, Chr3, Chr4 sequences |
+| osa.fa           | Rice (*Oryza sativa*) Chr10 sequence |
+| ath_h3k4.bw      | *Arabidopsis* H3K4me3 ChIP-seq (SRR3709930) |
+| ath_h3k9.bw      | *Arabidopsis* H3K9me2 ChIP-seq (GSM5574912) |
+| ath_wt.bw        | *Arabidopsis* WT sRNA-seq (GSE179796) |
+| ath_ddm.bw       | *Arabidopsis* ddm1 mutant sRNA-seq (GSE179796) |
+| osa_wt.bw        | Rice WT sRNA-seq |
+| ath_omics.csv    | Integrated *Arabidopsis* omics data |
 
 ## Implementation
 
