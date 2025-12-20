@@ -36,7 +36,7 @@ pip install -e .
 
 ## Test Data
 
-The test directory contains:
+The ``test`` directory contains:
 
 | File             | Description |
 |------------------|-------------|
@@ -119,5 +119,4 @@ dbat deepPeak --mode norm \
 
 2. Training parameters are adjustable: Modify settings (e.g. batch size) in ``config/cfg.yml`` as needed.
 
-3. deepLoci input format: The input CSV file must include a header with columns as: ``ID,feature,data,sample,pos1,pos2,...
-``
+3. deepLoci input format: The input CSV file must include a header as: ``ID,feature,data,sample,pos1,pos2,...``
